@@ -1,0 +1,7 @@
+go 1.20
+
+use (
+	"./Challenge 1"
+	"./Challenge 6"
+	"./Challenge2 1"
+)
