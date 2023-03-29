@@ -28,9 +28,7 @@ func (c *Controllers) CreateBook(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusCreated, gin.H{
-		"book": newBookData,
-	})
+	ctx.JSON(http.StatusCreated, newBookData)
 }
 
 // fungsi untuk mendapatkan data buku berdasarkan ID
@@ -46,9 +44,7 @@ func (c *Controllers) GetBookbyID(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, gin.H{
-		"book": book,
-	})
+	ctx.JSON(http.StatusOK, book)
 }
 
 // Fungsi untuk mengambil data semua buku
@@ -71,9 +67,7 @@ func (c *Controllers) GetAllBooks(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, gin.H{
-		"book": books,
-	})
+	ctx.JSON(http.StatusOK, books)
 }
 
 // fungsi untuk mengupdate data buku
@@ -102,9 +96,7 @@ func (c *Controllers) UpdateBookbyID(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, gin.H{
-		"book": book,
-	})
+	ctx.JSON(http.StatusOK, book)
 }
 
 // fungsi untuk menghapus data buku
